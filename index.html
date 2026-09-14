@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crossframe Support</title>
+<meta name="description" content="Support and answers for Crossframe, the camera that records vertical and horizontal video at the same time.">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<style>
+  :root {
+    --ink: #1a1614;
+    --muted: #6b635e;
+    --line: #e6e1dd;
+    --page: #ffffff;
+    --tint: #fdf2ee;
+    --accent: #e4633a;
+    --teal: #2f8f87;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #f2eeec;
+      --muted: #a49b95;
+      --line: #332e2b;
+      --page: #14110f;
+      --tint: #241b17;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 24px 72px;
+    background: var(--page);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 620px; margin: 0 auto; }
+  .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 44px; }
+  .brand span { font-size: 19px; font-weight: 600; letter-spacing: -0.3px; }
+  h1 { font-size: 34px; font-weight: 600; letter-spacing: -0.8px; margin: 0 0 12px; }
+  .lead { color: var(--muted); margin: 0 0 36px; }
+  h2 { font-size: 18px; font-weight: 600; letter-spacing: -0.2px; margin: 0 0 8px; }
+  p { margin: 0 0 14px; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; border-radius: 2px; }
+  .contact { background: var(--tint); border-radius: 12px; padding: 22px 24px; margin: 0 0 44px; }
+  .contact p:last-child { margin-bottom: 0; }
+  .contact .email { font-size: 20px; font-weight: 600; }
+  .faq { border-top: 1px solid var(--line); padding-top: 26px; }
+  .faq section { padding-bottom: 26px; margin-bottom: 26px; border-bottom: 1px solid var(--line); }
+  .faq section:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
+  .faq p:last-child { margin-bottom: 0; }
+  footer { margin-top: 52px; padding-top: 22px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
+  footer p { margin: 0 0 6px; }
+  @media (max-width: 500px) {
+    body { padding: 36px 20px 56px; font-size: 16px; }
+    h1 { font-size: 28px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="brand">
+    <svg width="38" height="38" viewBox="0 0 1024 1024" role="img" aria-label="Crossframe">
+      <rect width="1024" height="1024" rx="224" fill="#e4633a"/>
+      <rect x="192" y="332" width="640" height="360" rx="48" fill="none" stroke="#fff" stroke-width="44"/>
+      <rect x="332" y="192" width="360" height="640" rx="48" fill="none" stroke="#fff" stroke-width="44" opacity="0.62"/>
+      <circle cx="512" cy="512" r="72" fill="#fff"/>
+    </svg>
+    <span>Crossframe</span>
+  </div>
+
+  <h1>Support</h1>
+  <p class="lead">Answers to common questions, and a real person to email when the answer isn't here.</p>
+
+  <div class="contact">
+    <p>Email us and we'll reply within two business days.</p>
+    <p class="email"><a href="mailto:support@crossframe.app">support@crossframe.app</a></p>
+    <p style="color:var(--muted);font-size:15px">For bug reports, include your device model, iOS version, and the app version from Settings so we can reproduce the problem faster.</p>
+  </div>
+
+  <div class="faq">
+
+    <section>
+      <h2>How does recording both orientations work?</h2>
+      <p>Crossframe captures a single pass through the camera and writes out two files: one in 9:16 and one in 16:9. Neither is a crop of the other, so both cuts are properly composed and ready to publish.</p>
+    </section>
+
+    <section>
+      <h2>Where do my videos go?</h2>
+      <p>Both files save to your camera roll when the recording finishes. They appear as two separate videos, named so you can tell the vertical and horizontal cuts apart.</p>
+    </section>
+
+    <section>
+      <h2>Can I adjust the framing for each orientation?</h2>
+      <p>Yes. The live preview shows both frames while you shoot, and you can shift each one so your subject stays centered in the vertical cut and the horizontal cut at the same time.</p>
+    </section>
+
+    <section>
+      <h2>The app is running hot or dropping frames.</h2>
+      <p>Recording two streams is demanding. Close other apps, lower the resolution in Settings, and keep the phone out of direct sun. If it keeps happening, email us with your device model and we'll look into it.</p>
+    </section>
+
+    <section>
+      <h2>Which devices are supported?</h2>
+      <p>Crossframe requires iOS 16 or later. Older devices can record, but higher resolutions and longer takes work best on recent hardware.</p>
+    </section>
+
+    <section>
+      <h2>I want a refund.</h2>
+      <p>Purchases and subscriptions are handled by Apple, so refunds go through them directly at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. Email us too and tell us what went wrong, so we can fix it.</p>
+    </section>
+
+    <section>
+      <h2>How do I request a feature?</h2>
+      <p>Send it to the support address above. We read everything, and a fair amount of what ships started as a message from someone using the app.</p>
+    </section>
+
+  </div>
+
+  <footer>
+    <p><a href="privacy.html">Privacy policy</a></p>
+    <p>Last updated September 2026</p>
+  </footer>
+
+</div>
+</body>
+</html>
